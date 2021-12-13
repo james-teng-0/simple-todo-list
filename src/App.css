@@ -1,0 +1,60 @@
+.main-background {
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("bg-unsplash.jpg");
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.tasks-background {
+    min-height:70%;
+    min-width:40%;
+    background-color: rgba(255, 255, 255, 0.301);   
+
+    position: fixed;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1%;  
+}
+
+.main-header {
+    text-align: center;
+}
+
+.task-list {
+    list-style-type: none;
+}
+
+.form {
+    position: fixed;
+    bottom: 10%;
+    left: 40%;
+}
+
+.row {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+  
+input[type=submit] {
+    visibility: hidden;
+}
+
