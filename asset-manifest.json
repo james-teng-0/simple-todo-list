@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/simple-todo-list/static/css/main.de12123a.chunk.css",
+    "main.js": "/simple-todo-list/static/js/main.91d3fac2.chunk.js",
+    "main.js.map": "/simple-todo-list/static/js/main.91d3fac2.chunk.js.map",
+    "runtime-main.js": "/simple-todo-list/static/js/runtime-main.3bf37355.js",
+    "runtime-main.js.map": "/simple-todo-list/static/js/runtime-main.3bf37355.js.map",
+    "static/js/2.f81b3624.chunk.js": "/simple-todo-list/static/js/2.f81b3624.chunk.js",
+    "static/js/2.f81b3624.chunk.js.map": "/simple-todo-list/static/js/2.f81b3624.chunk.js.map",
+    "static/js/3.9ea5fea2.chunk.js": "/simple-todo-list/static/js/3.9ea5fea2.chunk.js",
+    "static/js/3.9ea5fea2.chunk.js.map": "/simple-todo-list/static/js/3.9ea5fea2.chunk.js.map",
+    "index.html": "/simple-todo-list/index.html",
+    "static/css/main.de12123a.chunk.css.map": "/simple-todo-list/static/css/main.de12123a.chunk.css.map",
+    "static/js/2.f81b3624.chunk.js.LICENSE.txt": "/simple-todo-list/static/js/2.f81b3624.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/simple-todo-list/static/media/bg-unsplash.edf62204.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bf37355.js",
+    "static/js/2.f81b3624.chunk.js",
+    "static/css/main.de12123a.chunk.css",
+    "static/js/main.91d3fac2.chunk.js"
+  ]
+}
