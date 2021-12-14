@@ -41,7 +41,6 @@ function App() {
                 // get destination and insert into destination index
                 dest_items.splice(e.destination.index, 0 , reorderedItem);
                 // update state
-                setDone(dest_items);
                 setTasks(items);
             }
             // if dest is tasks
@@ -82,7 +81,6 @@ function App() {
                 items.splice(e.destination.index, 0, reorderedItem);
                 // update state
                 setDone(dest_items);
-                setTasks(items);
             }
         }
     }
