@@ -42,6 +42,7 @@ function App() {
                 dest_items.splice(e.destination.index, 0 , reorderedItem);
                 // update state
                 setTasks(items);
+                setDone(dest_items);
             }
             // if dest is tasks
             else if (e.destination.droppableId === "tasks") {
@@ -81,6 +82,7 @@ function App() {
                 items.splice(e.destination.index, 0, reorderedItem);
                 // update state
                 setDone(dest_items);
+                setTasks(items);
             }
         }
     }
@@ -98,7 +100,7 @@ function App() {
                 <div className='row'>   
                     <DragDropContext onDragEnd={handleOnDragEnd}> 
                     <div className="column" id='column-1'>
-                        <h1 className="c1-title"> Todo. </h1> 
+                        <h1 className="c1-title"> todo. </h1> 
                             <Droppable droppableId='tasks'>
                                 {(provided) => (
                                     <ul className="tasks" {...provided.droppableProps} ref={provided.innerRef}>
@@ -126,7 +128,7 @@ function App() {
                     </div>
 
                     <div className="column" id='column-2'>
-                        <h1 className="c2-title"> Done. </h1>
+                        <h1 className="c2-title"> done. </h1>
                             <Droppable droppableId ='done'>
                                 {(provided) => (
                                     <ul className="done" {...provided.droppableProps} ref={provided.innerRef}>
