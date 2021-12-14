@@ -9,29 +9,25 @@
 
 .tasks-background {
     min-height:70%;
-    min-width:40%;
+    min-width:50%;
     background-color: rgba(255, 255, 255, 0.301);   
 
     position: fixed;
     border-radius: 25px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 25%;
+    top: 15%;
     padding: 1%;  
 }
 
-.main-header {
-    text-align: center;
-}
-
-.task-list {
+.tasks, .done {
     list-style-type: none;
 }
 
 .form {
-    position: fixed;
+    position: absolute;
     bottom: 10%;
-    left: 40%;
+    left: 18%;
+    margin:auto;
 }
 
 .row {
@@ -42,6 +38,7 @@
 .column {
     flex: 50%;
     padding: 10px;
+    text-align: center;
 }
 
 input[type=text] {
@@ -50,11 +47,55 @@ input[type=text] {
     border-bottom: 1px solid #000000;
 }
 
+input[type=text]::placeholder {
+    color: rgb(63, 63, 63);
+    text-align: center;
+}
+
 input[type=text]:focus {
     outline: none;
 }
   
-input[type=submit] {
+input[type=submit] {    
     visibility: hidden;
 }
 
+.tasksRow, .doneRow {
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.15);   
+    border-radius: 5px;
+    
+    overflow: hidden;
+    flex-shrink: 0;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.tasksRow:hover, .doneRow:hover {
+    background-color:rgba(255, 255, 255, 0.24); 
+}
+
+.tasksRow:focus, .tasksRow:active, .doneRow:focus, .doneRow:active {    
+    background-color:rgba(89, 102, 126, 0.24); 
+}
+
+.doneRow {
+    text-decoration: line-through;
+}
+
+.c1-title, .c2-title {
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 51.5%;
+    border-left: 0.1px solid #00000059;
+}
+
+.delete {
+    float:right;
+}
