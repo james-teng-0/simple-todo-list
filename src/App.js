@@ -88,9 +88,10 @@ function App() {
     }
     
     function handleDelete(e) {
-        console.log(e.currentTarget.parentElement.tabindex)
-        // delete parent li container
-        e.currentTarget.parentElement.remove();
+        const dest_items = Array.from(doneList);
+        const taskText = e.currentTarget.parentElement.innerText;
+        dest_items.splice(dest_items.indexOf(taskText), 1);     
+        setDone(dest_items);       
     }
 
     return (   
